@@ -23,25 +23,22 @@ public class FunctionInterfaceTest {
     }
 
     public static void main(String[] args) throws InterruptedException {
+
 //        lamada expression replace a FunctionInterface
         FunctionInterfaceTest functionInterfaceTest = new FunctionInterfaceTest();
-        functionInterfaceTest.myTest(new MyInterface() {
-            @Override
-            public void test() {
-                System.out.println("mytest");
-            }
-        });
-        functionInterfaceTest.myTest(() -> System.out.println("mytest2"));
+        functionInterfaceTest.myTest(() -> System.out.println("mytest"));
+
 //        method reference replace a FunctionInterface
         List<String> list = Arrays.asList("hello", "world", "hello world");
-        list.forEach(item -> System.out.println(item));
         list.stream().map(String::toUpperCase).forEach(System.out::println);
+
 //        constructor method reference replace a FunctionInterface
-        list.stream().collect(Collectors.toCollection(LinkedList::new));
+        LinkedList<String> resultList = list.stream().collect(Collectors.toCollection(LinkedList::new));
         System.out.println("--------------------------------------------");
         MyInterface myInterface = () -> {
             System.out.println("hello");
         };
+
 //        Lamada is Object in java and must be attached with functionInterface,But it is function in python,scala,kotlin...
         System.out.println(myInterface.getClass());
         System.out.println(myInterface.getClass().getSuperclass());

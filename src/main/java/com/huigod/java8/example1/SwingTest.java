@@ -11,7 +11,7 @@ public class SwingTest {
 
 //        jButton.addActionListener(e -> System.out.println("Button pressed!"));
 
-        //对于这种匿名内部内真正需要用到的代码只是一行代码
+        //Only a line code is useful
         jButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
