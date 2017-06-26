@@ -11,12 +11,13 @@ public class StreamTest5 {
 
 //        System.out.println(stream.filter(item -> item > 200).mapToInt(item -> item * 2).skip(2).limit(2).sum());
 
-        stream.filter(item -> {
-            System.out.println(item + ":1");
-            return item > 2;
-        }).mapToInt(item -> {
-            System.out.println(item + ":2");
-            return item * 2;}).skip(2).limit(2).max().ifPresent(System.out::println);
+//        stream.filter(item -> {
+//            System.out.println(item + ":filter");
+//            return item > 2;
+//        }).mapToInt(item -> {
+//            System.out.println(item + ":map");
+//            return item * 2;
+//        }).skip(2).limit(2).max().ifPresent(System.out::println);
 
 
 //        IntSummaryStatistics summaryStatistics = stream.filter(item -> item > 2).

@@ -27,6 +27,8 @@ Note that instances of functional interfaces can be created with lambda expressi
 -->com.huigod.java8.methodreference.MethodReferenceTest
 
 四.Stream
+Traditional collections focus on  data and store.
+Stream focuses on computer.
 collect
 
 
