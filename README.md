@@ -20,5 +20,10 @@ Note that instances of functional interfaces can be created with lambda expressi
 -->com.huigod.java8.example1.BasicFunctionTest
 
 二.Optional
+-->com.huigod.java8.example1.OptionalTest
+-->com.huigod.java8.example1.OptionalTest2
 
-why there are default and static method in interface?
+三.Method reference
+-->com.huigod.java8.methodreference.MethodReferenceTest
+
+

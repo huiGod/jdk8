@@ -16,10 +16,9 @@ public class OptionalTest {
         System.out.println(optional.orElse("world"));
         System.out.println("---------");
 
-        System.out.println(optional.orElseGet(() -> "nihao"));
+        System.out.println(optional.orElseGet(() -> "hello world"));
 
 
 
-    }
     }
 }
