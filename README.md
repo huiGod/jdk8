@@ -26,4 +26,7 @@ Note that instances of functional interfaces can be created with lambda expressi
 三.Method reference
 -->com.huigod.java8.methodreference.MethodReferenceTest
 
+四.Stream
+collect
+
 
