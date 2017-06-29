@@ -1,6 +1,6 @@
 package com.huigod.java8.stream;
 
-public class StreamTest2 {
+public class CollectionsTest {
     public static void main(String[] args) {
 //        Stream<String> stream = Stream.of("hello", "world", "helloworld");
 //        String[] stringArray = stream.toArray(length -> new String[length]);
@@ -13,10 +13,11 @@ public class StreamTest2 {
         //serializer
 //        List<String> list = stream.collect(() -> new ArrayList(), (theList, item) -> theList.add(item), (theList1, theList2) -> theList1.addAll(theList2));
         //paraller
-//        List<String> list = stream.parallel().collect(() -> {
+//        List<String> list = stream.collect(() -> {
 //                    System.out.println("1");
 //                    return new ArrayList();
 //                }, (theList, item) -> {
+//                    System.out.println(theList);
 //                    System.out.println("2");
 //                    theList.add(item);},
 //                (theList1, theList2) -> {

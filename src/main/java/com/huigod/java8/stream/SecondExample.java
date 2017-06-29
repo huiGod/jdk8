@@ -2,7 +2,7 @@ package com.huigod.java8.stream;
 
 import java.util.stream.Stream;
 
-public class StreamTest5 {
+public class SecondExample {
     public static void main(String[] args) {
 //        Stream<String> stream = Stream.generate(UUID.randomUUID()::toString);
 //        stream.findFirst().ifPresent(System.out::println);

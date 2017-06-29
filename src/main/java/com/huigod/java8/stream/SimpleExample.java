@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class StreamTest1 {
+public class SimpleExample {
     public static void main(String[] args) {
         Stream stream1 = Stream.of("hello", "world", "hello world");
 

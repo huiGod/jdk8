@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
-public class StreamTest6 {
+public class PerformanceCompare {
     public static void main(String[] args) {
 
         List<String> list = new ArrayList<>(5000000);

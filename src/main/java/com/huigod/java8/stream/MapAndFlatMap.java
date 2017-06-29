@@ -1,11 +1,8 @@
 package com.huigod.java8.stream;
 
-import java.util.Arrays;
-import java.util.List;
-
-public class StreamTest7 {
+public class MapAndFlatMap {
     public static void main(String[] args) {
-        List<String> list = Arrays.asList("hello", "world", "hello world");
+//        List<String> list = Arrays.asList("hello", "world", "hello world");
 
 //        list.stream().mapToInt(item -> item.length()).filter(length -> length == 5).
 //                findFirst().ifPresent(System.out::println);
