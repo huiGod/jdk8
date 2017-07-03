@@ -32,3 +32,24 @@ Stream focuses on computer.
 collect 
 
 
+Outline:
+1.Function in java
+1.1 Default Method
+1.2 Passing code to methods with behavior parameterization
+1.3 Interface Function
+1.4 Methods and lambdas as first-class citizens
+1.5 why
+
+
+2.Stream
+2.1 Collect
+2.2 Compare
+
+3.Joda Time
+
+4.Stream Source Analyze
+
+
+
+
+
