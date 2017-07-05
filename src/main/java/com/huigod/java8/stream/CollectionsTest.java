@@ -1,9 +1,11 @@
 package com.huigod.java8.stream;
 
+import java.util.stream.Stream;
+
 public class CollectionsTest {
     public static void main(String[] args) {
-//        Stream<String> stream = Stream.of("hello", "world", "helloworld");
-//        String[] stringArray = stream.toArray(length -> new String[length]);
+        Stream<String> stream = Stream.of("hello", "world", "helloworld");
+//        String[] stringArray = stream.toArray(length -> new String[l ength]);
 //        String[] stringArray = stream.toArray(String[]::new);
 //        Arrays.asList(stringArray).forEach(System.out::println);
 

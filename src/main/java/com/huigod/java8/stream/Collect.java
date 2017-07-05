@@ -15,10 +15,12 @@ public class Collect {
 
         List<Student> students = Arrays.asList(student1, student2, student3, student4);
 
-        //summary
+        //summary  reducing
         System.out.println("summary:");
         students.stream().collect(Collectors.minBy(Comparator.comparingInt(Student::getScore))).ifPresent(System.out::println);
         students.stream().collect(Collectors.averagingInt(Student::getScore));
+        students.stream().collect(Collectors.counting());
+        students.stream().collect(Collectors.summingInt(Student::getAge));
 
         //joining
         System.out.println("joining:");

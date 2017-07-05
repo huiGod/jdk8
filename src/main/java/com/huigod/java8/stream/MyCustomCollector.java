@@ -17,10 +17,7 @@ public class MyCustomCollector<T> implements Collector<T, Set<T>, Set<T>> {
     @Override
     public BiConsumer<Set<T>, T> accumulator() {
         System.out.println("accumulator invoked!");
-        return (set1, set2) -> {
-            System.out.println("accumylator one!");
-            set1.add(set2);
-        };
+        return (set1, set2) -> set1.add(set2);
 //        return Set<T>::add;
     }
 

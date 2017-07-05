@@ -31,7 +31,7 @@ public class MethodReferenceTest {
         students.forEach(student -> System.out.println(student.getScore()));
 
         //ObjectName::InstanceMethod
-        students.sort((studentParam1, studentParam2) -> new StudentComparator().compareStudentByScore(studentParam1, studentParam2));
+        students.sort((studentParam1, studentParam2) -> new StudentComparator().compareStudentByScore (studentParam1, studentParam2));
         students.forEach(student -> System.out.println(student.getScore()));
         System.out.println("--------------------------------------");
         students.sort(new StudentComparator()::compareStudentByScore);

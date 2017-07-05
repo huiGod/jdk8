@@ -20,7 +20,7 @@ public class StreamTest4 {
 
         Stream<List<Integer>> stream = Stream.of(Arrays.asList(1),
                 Arrays.asList(2, 3), Arrays.asList(4, 5, 6));
-//        stream.map(item -> {System.out.println(item);return item;}).count();
+        stream.map(item -> {System.out.println(item);return item;}).count();
         stream.flatMap(theList -> theList.stream()).map(item -> item * item).forEach(System.out::println);
 
     }

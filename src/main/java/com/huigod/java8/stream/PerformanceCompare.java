@@ -18,7 +18,7 @@ public class PerformanceCompare {
 
         long startTime = System.nanoTime();
 
-        list.parallelStream().sorted().count();
+        list.stream().parallel().sorted().count();
 
         long endTime = System.nanoTime();
 
