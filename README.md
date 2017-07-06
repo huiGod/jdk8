@@ -1,6 +1,8 @@
 # jdk8
 need: gradle >=jdk1.8
+
 Outline:
+
 1.Functional programming in java
 
 2.Stream
