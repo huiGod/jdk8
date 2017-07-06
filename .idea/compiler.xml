@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="jdk8" target="1.8" />
       <module name="jdk8_main" target="1.8" />
       <module name="jdk8_test" target="1.8" />
     </bytecodeTargetLevel>
