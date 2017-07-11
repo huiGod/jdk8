@@ -1,5 +1,7 @@
 # jdk8
-need: gradle >=jdk1.8
+need: 
+gradle 
+jdk1.8
 
 Outline:
 
