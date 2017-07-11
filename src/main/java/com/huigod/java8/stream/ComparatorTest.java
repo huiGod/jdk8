@@ -10,9 +10,8 @@ public class ComparatorTest {
 //        Collections.sort(list, (item1, item2) -> item2.length() - item1.length());
 
 //        Collections.sort(list, Comparator.comparingInt(String::length).reversed());
+//        Collections.sort(list, Comparator.comparingInt((String item) -> item.length()).reversed());
 
-//        Collections.sort(list, Comparator.comparingInt((String item) -> item.length()).reversed());
-//        Collections.sort(list, Comparator.comparingInt((String item) -> item.length()).reversed());
 
 //        list.sort(Comparator.comparingInt(String::length).reversed());
 //        list.sort(Comparator.comparingInt((String item) -> item.length()).reversed());
