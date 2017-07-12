@@ -1,6 +1,7 @@
 package com.huigod.java8.example1;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -27,6 +28,15 @@ public class FunctionInterfaceTest {
 //        lamada expression replace a FunctionInterface
         FunctionInterfaceTest functionInterfaceTest = new FunctionInterfaceTest();
         functionInterfaceTest.myTest(() -> System.out.println("mytest"));
+
+//        sort
+        List<String> list1 = Arrays.asList("nihao", "hello", "world", "welcome");
+        Collections.sort(list1, (item1, item2) -> item1.length() - item2.length());
+
+//        thread
+        Runnable r1 = () -> System.out.println("invoke run!");
+        Thread thread = new Thread(r1);
+        thread.start();
 
 //        method reference replace a FunctionInterface
         List<String> list = Arrays.asList("hello", "world", "hello world");

@@ -9,9 +9,9 @@ public class OptionalTest {
         if(optional.isPresent()) {
             System.out.println(optional.get());
         }
-
         optional.ifPresent(System.out::println); //recommend way
         System.out.println("-------");
+
 
         System.out.println(optional.orElse("world"));
         System.out.println("---------");

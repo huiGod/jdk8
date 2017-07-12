@@ -27,6 +27,7 @@ public class MyCustomCollector2<T> implements Collector<T, Set<T>, Map<T, T>> {
     public BinaryOperator<Set<T>> combiner() {
         System.out.println("combiner invoked!");
         return (set1, set2) -> {
+            System.out.println("combiner:" + set1 + "," +set2);
             set1.addAll(set2);
             return set1;
         };
@@ -45,7 +46,7 @@ public class MyCustomCollector2<T> implements Collector<T, Set<T>, Map<T, T>> {
     @Override
     public Set<Characteristics> characteristics() {
         System.out.println("characteristics invoked!");
-        return Collections.unmodifiableSet(EnumSet.of(Characteristics.UNORDERED, Characteristics.CONCURRENT));
+        return Collections.unmodifiableSet(EnumSet.of(Characteristics.UNORDERED));
     }
 
     public static void main(String[] args) {
@@ -54,7 +55,7 @@ public class MyCustomCollector2<T> implements Collector<T, Set<T>, Map<T, T>> {
             Set<String> set = new HashSet<>();
             set.addAll(list);
 
-            Map<String, String> map = set.parallelStream().collect(new MyCustomCollector2<>());
+            Map<String, String> map = set.stream().parallel().collect(new MyCustomCollector2<>());
             System.out.println(map);
         }
     }

@@ -7,7 +7,7 @@ public class ComparatorTest {
         List<String> list = Arrays.asList("nihao", "hello", "world", "welcome");
 
 //        Collections.sort(list, (item1, item2) -> item1.length() - item2.length());
-//        Collections.sort(list, (item1, item2) -> item2.length() - item1.length());
+        Collections.sort(list, (item1, item2) -> item2.length() - item1.length());
 
 //        Collections.sort(list, Comparator.comparingInt(String::length).reversed());
 //        Collections.sort(list, Comparator.comparingInt((String item) -> item.length()).reversed());
